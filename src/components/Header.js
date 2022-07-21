@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
-import { VikingLogo, TopggLogo } from '../assets/images/';
+import { VikingLogo } from '../assets/images/';
+
+import { ReactComponent as TopLogo } from '../assets/images/topgg_logo.svg';
 
 export default function Header() {
     return (
@@ -12,8 +14,20 @@ export default function Header() {
             <h2 className="text-slate-400" >For more beatiful Discord experience, a soldier from Scandinavia, Viking.</h2>
           </div>
           <div className="flex items-center buttons">
-            <a href="https://discord.com/oauth2/authorize?client_id=516281980044836916&scope=bot&permissions=8" target="_blank" rel="noreferrer" className="flex items-center px-4 py-2 mx-2 rounded-md button bg-background-50/40 text-slate-200"><FontAwesomeIcon className={"mr-1"} icon={faDiscord} />Invite</a>
-            <a href="https://top.gg/bot/516281980044836916" target="_blank" rel="noreferrer" className="flex items-center px-4 py-2 mx-2 rounded-md button bg-background-50/40 text-slate-200"><img className={"mr-1"} src={TopggLogo} alt={"Top.gg logo"} />Top.gg</a>
+            <a 
+              href="https://discord.com/oauth2/authorize?client_id=516281980044836916&scope=bot&permissions=8" 
+              target="_blank" rel="noreferrer" 
+              className="flex items-center px-4 py-2 mx-2 transition-colors rounded-md button bg-background-50/40 text-slate-200 hover:bg-background-dark hover:text-slate-100"
+            >
+              <FontAwesomeIcon className="mr-1" icon={faDiscord} />Invite
+            </a>
+            <a 
+              href="https://top.gg/bot/516281980044836916" 
+              target="_blank" rel="noreferrer" 
+              className="flex items-center px-4 py-2 mx-2 transition-colors rounded-md button bg-background-50/40 text-slate-200 hover:bg-background-dark hover:text-slate-100"
+            >
+              <TopLogo className="mr-1" style={{width: '20px'}} />Top.gg
+            </a>
           </div>
         </header>
     )

@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
+const Color = require('color');
+const alpha = (clr, val) => Color(clr).alpha(val).rgb().string()
+const lighen = (clr, val) => Color(clr).lighten(val).rgb().string()
+const darken = (clr, val) => Color(clr).darken(val).rgb().string()
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -19,7 +25,8 @@ module.exports = {
         },
         background: {
           50: "#4069D3",
-          100: "#253c78"
+          100: "#253c78",
+          dark: darken('#4069d366', 0.25)
         }
       },
       fontFamily: {
