@@ -7,11 +7,11 @@ import { ReactComponent as TopLogo } from '../assets/images/topgg_logo.svg';
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between p-4 my-1 rounded bg-background-100">
+        <header className="flex items-center justify-between p-4 my-1 rounded bg-background-100 md:flex-col">
           <img className="hover:opacity-75" src={VikingLogo} alt="Viking logo" width={100} height={100} />
           <div className="mx-2">
             <h1 className="text-3xl font-bold text-center text-slate-300">Viking Bot</h1>
-            <h2 className="text-slate-400" >For more beatiful Discord experience, a soldier from Scandinavia, Viking.</h2>
+            <h2 className="text-center text-slate-400" >For more beatiful Discord experience, a soldier from Scandinavia, Viking.</h2>
           </div>
           <div className="flex items-center buttons">
             <a 
