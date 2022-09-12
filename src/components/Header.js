@@ -15,7 +15,7 @@ export default function Header() {
           </div>
           <div className="flex items-center buttons">
             <a 
-              href="https://discord.com/oauth2/authorize?client_id=516281980044836916&scope=bot&permissions=8" 
+              href="https://discord.com/api/oauth2/authorize?client_id=516281980044836916&permissions=1643327778039&scope=bot" 
               target="_blank" rel="noreferrer" 
               className="flex items-center px-4 py-2 mx-2 transition-colors rounded-md button bg-background-50/40 text-slate-200 hover:bg-background-dark hover:text-slate-100"
             >
